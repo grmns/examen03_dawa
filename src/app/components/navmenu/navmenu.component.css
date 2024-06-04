@@ -1,0 +1,67 @@
+.navbar {
+    background-color: #23409f;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.navbar-brand{
+    margin-right: auto; 
+}
+
+.navbar-brand img {
+    height: 70px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-grow: 1;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #eece18 !important; 
+}
+
+.navbar-nav li{
+    padding: 0px 40px; 
+}
+
+.navbar-toggler {
+    margin-left: auto; 
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.dropdown-menu {
+    background-color: #263778;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #ff6600 !important; 
+    background-color: transparent;
+}
+
+.btn-outline-success {
+    color: white !important;
+    border-color: white !important;
+}
+
+.btn-outline-success:hover {
+    color: #ff6600 !important;
+    border-color: #ff6600 !important;
+}

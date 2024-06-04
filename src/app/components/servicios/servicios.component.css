@@ -1,0 +1,80 @@
+.todo_service {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Agregar padding para evitar que el contenido toque los bordes */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho definido */
+}
+
+.services-section {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    width: 80%; /* Ligeramente más pequeño para centrar visualmente */
+    max-width: 1320px; /* Limita el ancho máximo */
+    border-radius: 10px; /* Bordes redondeados para una estética suave */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más prominente para 3D efecto */
+}
+
+.section-title {
+    font-size: 2.5rem; /* Unidad consistente rem */
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Cambiado a centro para mejor alineación */
+    gap: 20px; /* Utiliza gap para espacio entre tarjetas */
+}
+
+.service-card {
+    background-color: #292929;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(50% - 40px); /* Ajusta el ancho directamente */
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para alinear icono sobre el texto */
+    align-items: center; /* Centrado de elementos en la tarjeta */
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    cursor: pointer; /* Indica que es interactivo */
+}
+
+.icon {
+    font-size: 3rem; /* Icono más grande */
+    color: #ff4c4c;
+    margin-bottom: 20px; /* Espacio después del icono */
+}
+
+.service-card h3 {
+    color: #ff4c4c;
+}
+
+.service-card p {
+    font-size: 1rem;
+    text-align: center; /* Alineación del texto para mejorar la legibilidad */
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%; /* Tarjetas de ancho completo en dispositivos pequeños */
+    }
+
+    .services-section {
+        padding: 20px;
+        width: 100%; /* Sección de servicios ocupa todo el ancho */
+    }
+}
